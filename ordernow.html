@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ordernow.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Food Spot</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Food Spot</h1>
+        <div class="navlist show">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bf.html">BreakFast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="bev.html">Beverage</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+                <li><a href="order.html" class="active">Order Now</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <button onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <div class="button-left">
+        <button><a href="order.html"><i class="fa-solid fa-arrow-left"></i></a></button>
+        <button><a href="ordernow.html"><i class="fa-solid fa-arrow-right"></i></a></button>
+    </div>
+    <div class="cards">
+        <div class="div-left">
+            <h1>BREAK FAST</h1>
+            <div class="lists">
+                <li>IDLY</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>DOSA</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>PONGAL</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>KICHADI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>VADA</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>POORI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>CHAPPATHI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>SALAD</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>NOODLES</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>KAL DOSA</li>
+                <button>Order</button>
+            </div>
+        </div>
+        <div class="div-right">
+            <h1>LUNCH</h1>
+            <div class="lists">
+                <li>SAMBAR RICE</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>PLAIN RICE</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>VEG BRIYANI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>CHICKEN BRIYANI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>MUTTON BRIYANI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>BEEF BRIYANI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>CHAPATHI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>VEG MEALS</li>
+                <button>Order</button>
+            </div>
+        </div>
+        <div class="div-down">
+            <h1>DINNER</h1>
+            <div class="lists">
+                <li>DOSA</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>IDLY</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>APPAM</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>CHICKEN BRIYANI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>MUTTON BRIYANI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>BEEF BRIYANI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>CHAPATHI</li>
+                <button>Order</button>
+            </div>
+            <div class="lists">
+                <li>PAROTTA</li>
+                <button>Order</button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.navlist');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

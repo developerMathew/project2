@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Food Spot</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Food Spot</h1>
+        <div class="navlist show">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="bf.html">BreakFast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="bev.html">Beverage</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+                <li><a href="order.html">Order Now</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <button onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.navlist');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

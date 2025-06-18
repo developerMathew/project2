@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgb(191, 9, 9);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 50px;
+}
+
+
+.navlist ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 25px;
+}
+
+.navlist ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.8s;
+    overflow: hidden;
+
+}
+
+.navlist ul li a:hover {
+    background-color: teal;
+}
+
+.active {
+    background-color: teal;
+}
+
+.menu {
+    display: none;
+}
+
+.menu button {
+    font-size: 35px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+@media(max-width:1000px) {
+    .navlist {
+        display: block;
+
+    }
+
+    .navlist ul {
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(175, 175, 175, 0.8);
+        left: 0;
+        width: 100%;
+        top: 65px;
+        place-items: center;
+        padding: 30px;
+    }
+
+    .navlist ul li a {
+        color: #222;
+    }
+
+    .navlist ul li {
+        padding: 10px 0;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .show {
+        display: none;
+    }
+
+}
+
+@media(max-width:800px) {
+    .navbar h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media(max-width:500px) {
+    .menu button {
+        font-size: 30px;
+    }
+
+    .navbar {
+        padding: 10px 5px;
+    }
+
+}
+
+@media(max-width:400px) {
+    .menu button {
+        font-size: 25px;
+    }
+
+    .navbar h1 {
+        font-size: 25px;
+    }
+
+    .navbar {
+        padding: 10px 5px;
+    }
+
+}
+
+.button-left {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-left button {
+    padding: 10px;
+    background-color: green;
+    border: none;
+    outline: none;
+    font-size: 50px;
+    border-radius: 35px;
+}
+
+.button-left button a {
+    color: #fff;
+}
+
+.div-left {
+    border: 1px solid;
+    width: 50%;
+    border-radius: 30px;
+    padding: 30px;
+    justify-items: center;
+    background-color: rgb(244, 244, 244);
+}
+
+.div-left h1 {
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.div-left li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.lists {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.lists button {
+    background-color: teal;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+
+.div-right {
+    border: 1px solid;
+    width: 50%;
+    border-radius: 30px;
+    padding: 30px;
+    justify-items: center;
+    background-color: rgb(244, 244, 244);
+}
+
+.div-right h1 {
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.div-right li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.lists {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.lists button {
+    background-color: teal;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+
+.div-down {
+    border: 1px solid;
+    width: 50%;
+    border-radius: 30px;
+    padding: 30px;
+    justify-items: center;
+    background-color: rgb(244, 244, 244);
+}
+
+.div-down h1 {
+    background-color: orange;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.div-down li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.lists {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.lists button {
+    background-color: teal;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+
+.cards {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+@media(max-width:1000px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    .div-left {
+        width: 100%;
+    }
+
+    .div-right {
+        width: 100%;
+    }
+
+    .div-down {
+        width: 100%;
+    }
+}
+
+@media(max-width:400px) {
+    .div-left h1 {
+        font-size: 25px;
+    }
+
+    .div-right h1 {
+        font-size: 25px;
+    }
+
+    .div-down h1 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:500px) {
+    .button-left button {
+        font-size: 25px;
+    }
+}

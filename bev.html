@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bev.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <title>Food Spot</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Food Spot</h1>
+        <div class="navlist show">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bf.html">BreakFast</a></li>
+                <li><a href="lunch.html">Lunch</a></li>
+                <li><a href="bev.html" class="active">Beverage</a></li>
+                <li><a href="dinner.html">Dinner</a></li>
+                <li><a href="order.html">Order Now</a></li>
+            </ul>
+        </div>
+        <div class="menu">
+            <button onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- layer-1 -->
+    <div class="layer-1">
+        <div class="tea1">
+            <img src="t2.jpg" alt="">
+        </div>
+        <div class="tea2">
+            <li>TEA</li>
+            <li>COFFEE</li>
+            <li>LEMON TEA</li>
+            <li>GREEN TEA</li>
+            <li>BLACK COFFEE</li>
+            <li>GINGER TEA</li>
+        </div>
+
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="foot">
+            <div class="ft-left">
+                <img src="t1.jpg" alt="">
+            </div>
+            <div class="foot-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="bf.html">BreakFast</a></li>
+                    <li><a href="lunch.html">Lunch</a></li>
+                    <li><a href="bev.html">Beverage</a></li>
+                    <li><a href="#">Dinner</a></li>
+                    <li><a href="#">Order Now</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.navlist');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+
+</html>

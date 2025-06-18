@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("f1bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar {
+    background-color: rgb(191, 9, 9);
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 50px;
+}
+
+
+.navlist ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    font-size: 25px;
+}
+
+.navlist ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.8s;
+    overflow: hidden;
+
+}
+
+.navlist ul li a:hover {
+    background-color: teal;
+}
+
+.active {
+    background-color: teal;
+}
+
+.menu {
+    display: none;
+}
+
+.menu button {
+    font-size: 35px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+@media(max-width:1000px) {
+    .navlist {
+        display: block;
+
+    }
+
+    .navlist ul {
+        flex-direction: column;
+        position: absolute;
+        background-color: rgba(175, 175, 175, 0.8);
+        left: 0;
+        width: 100%;
+        top: 65px;
+        place-items: center;
+        padding: 30px;
+    }
+
+    .navlist ul li a {
+        color: #222;
+    }
+
+    .navlist ul li {
+        padding: 10px 0;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .show {
+        display: none;
+    }
+
+}
+
+@media(max-width:800px) {
+    .navbar h1 {
+        font-size: 35px;
+    }
+
+}
+
+@media(max-width:500px) {
+    .menu button {
+        font-size: 30px;
+    }
+
+    .navbar {
+        padding: 10px 5px;
+    }
+
+}
+
+@media(max-width:400px) {
+    .menu button {
+        font-size: 25px;
+    }
+
+    .navbar h1 {
+        font-size: 25px;
+    }
+
+    .navbar {
+        padding: 10px 5px;
+    }
+
+}
+
+/* layer-1 design*/
+.layer-1 {
+    border: solid white;
+    display: flex;
+}
+
+.layer1-page1 {
+    border: solid white;
+    width: 40%;
+    height: 50%;
+}
+
+.layer1-page2 {
+    border: solid white;
+    width: 40%;
+    height: 50%;
+}
+
+.layer1-page3 {
+    border: solid white;
+    width: 40%;
+    height: 50%;
+}
